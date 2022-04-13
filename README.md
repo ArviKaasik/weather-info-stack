@@ -4,16 +4,16 @@ This project showcases fetching Tallinn weather metrics, scraping these metrics 
 
 ## How to run
 
-Define following Azure variables:
+Define following Azure variables in variables.tf, or provide these values when asked:
 * subscription_id
 * client_id
 * client_secret
 * tenant_id
 
 Run following commands in terraform folder:
-1. terraform init
-2. terraform apply -auto-approve
-3. terraform apply -auto-approve again
+1. 'terraform init'
+2. 'terraform apply -auto-approve'
+3. After you receive 'host for provisioner cannot be empty' error, run 'terraform apply -auto-approve' again
 4. Use ip address from terraform output to access Grafana
 5. For admin access, use user 'admin' and password 'admin'
 6. Dashboards are available at http://{ip}:3000/d/VZ7-RdUnz/weather-information?orgId=1
